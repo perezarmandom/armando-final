@@ -2,10 +2,6 @@
 
 {% set member = data.members[1] %}
 
-{% block page_title %}{{ member.name }}{% endblock %}
-
-{% block page_description %}{{ member.slug }}{% endblock %}
-
 {% block info %}
   <img src="/img/members/brian-may-color.jpg" alt="" class="img-fluid">
 {% endblock %}
@@ -13,4 +9,11 @@
 {% block slug %}
   <h1>{{ member.name }}</h1>
   <p>{{ member.slug }}</p>
+  <h3>Information:</h3>
+      <ul>
+        <li>{{ member.instrument }}</li>
+        <li>{{ member.tenure }}</li>
+        <li>{{ member.birthplace }}</li>
+        <li>{{ member.birthdate }}</li>
+      </ul>
 {% endblock %}
