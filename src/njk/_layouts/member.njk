@@ -1,0 +1,22 @@
+{% extends '_layouts/base.njk' %}
+
+{% block page_title %}{{ member.name }}{% endblock %}
+
+{% block page_description %}{{ member.name }}{% endblock %}
+
+{% block content %}
+<article class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      {% block info %}
+      {% endblock %}
+    </div>
+    <div class="col-sm-8">
+      {% block slug %}
+        <h1>{{ member.name }}</h1>
+        <p>{{ member.slug }}</p>
+      {% endblock %}
+    </div>
+  </div>
+</article>
+{% endblock %}

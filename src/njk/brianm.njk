@@ -1,0 +1,16 @@
+{% extends '_layouts/member.njk' %}
+
+{% set member = data.members[1] %}
+
+{% block page_title %}{{ member.name }}{% endblock %}
+
+{% block page_description %}{{ member.slug }}{% endblock %}
+
+{% block info %}
+  <img src="/img/members/brian-may-color.jpg" alt="" class="img-fluid">
+{% endblock %}
+
+{% block slug %}
+  <h1>{{ member.name }}</h1>
+  <p>{{ member.slug }}</p>
+{% endblock %}
