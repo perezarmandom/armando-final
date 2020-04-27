@@ -1,0 +1,19 @@
+{% extends '_layouts/album.njk' %}
+
+{% set album = data.discography[0] %}
+
+{% block info %}
+  <img src="/img/members/roger-taylor-color.jpg" alt="" class="img-fluid">
+{% endblock %}
+
+{% block slug %}
+  <h1>{{ album.name }}</h1>
+  <p>{{ album.description }}</p>
+  <h3>Information:</h3>
+      <ul>
+        <li>{{ member.instrument }}</li>
+        <li>{{ member.tenure }}</li>
+        <li>{{ member.birthplace }}</li>
+        <li>{{ member.birthdate }}</li>
+      </ul>
+{% endblock %}

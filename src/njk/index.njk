@@ -7,19 +7,16 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-sm-4">
       <h1>Queen</h1>
       <h2>Members</h2>
         {% for member in data.members %}
         <h3 class="entry-headline"><a href="{{ member.link }}">{{ member.name }}</a></h3>
         {% endfor %}
-      <h3>Discography</h3>
+      <h2>Discography</h2>
         {% for album in data.discography %}
         <h3 class="entry-headline"><a href="{{ album.link }}">{{ album.name }}</a></h3>
         {% endfor %}
-      <ol>
-        <ul><a href="queen.html">Queen</a></ul>
-     </ul>
     </div>
   </div>
 </div>
