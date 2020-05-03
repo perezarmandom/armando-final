@@ -1,0 +1,13 @@
+<div class="card">
+  <img src="/img/members/{{ member.image }}" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b> <a href="{{ member.slug }}.html">{{member.name}}</a></b></h4>
+    <p>
+      <ul>
+        <li>Instruments: {{ member.instruments }}</li>
+        <li>Tenure: {{ member.tenure }}</li>
+        <li>Birthplace: {{ member.birthplace }}</li>
+        <li>Birthdate: {{ member.birthdate }}</li>
+      </ul></p>
+  </div>
+</div>

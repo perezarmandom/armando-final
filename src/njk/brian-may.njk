@@ -1,0 +1,11 @@
+{% extends '_layouts/member.njk' %}
+
+{% set member = data.members[1] %}
+
+{% block info %}
+  {% include "_partials/member-card.njk" %}
+{% endblock %}
+
+{% block slug %}
+  <p>{{ member.text }}</p>
+{% endblock %}

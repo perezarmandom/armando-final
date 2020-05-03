@@ -11,11 +11,11 @@
       <h1>Queen</h1>
       <h2>Members</h2>
         {% for member in data.members %}
-        <h3 class="entry-headline"><a href="{{ member.link }}">{{ member.name }}</a></h3>
+          {% include "_partials/member-card.njk" %}
         {% endfor %}
       <h2>Discography</h2>
         {% for album in data.discography %}
-        <h3 class="entry-headline"><a href="{{ album.link }}">{{ album.name }}</a></h3>
+          {% include "_partials/index-card.njk" %}
         {% endfor %}
     </div>
   </div>
