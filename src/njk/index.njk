@@ -1,14 +1,14 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}Queen{% endblock %}
 
-{% block page_description %}The search description for this page goes here.{% endblock %}
+{% block page_description %}Queen is a British rock band whose fusion of heavy metal, glam rock, and camp theatrics made it one of the most popular groups of the 1970s{% endblock %}
 
 {% block content %}
+{% include "_partials/carousel.njk" %}
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      <h1>Queen</h1>
+    <div class="col-sm-6">
       <h2>Members</h2>
         {% for member in data.members %}
           {% include "_partials/member-card.njk" %}
