@@ -16,9 +16,17 @@
 // Required
 // @import "../../node_modules/bootstrap/scss/functions";
 // @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins"; 
+// @import "../../node_modules/bootstrap/scss/mixins";
 
+p, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: dimgray;
+}
 // Import partials
 @import "nav";
 @import "index-card";
 @import "jumbotron";
+@import "img";
