@@ -14,8 +14,8 @@
             <div class="card img">
               <img src="img/discs/{{ album.image }}" alt="{{ album.title }}" class="responsive">
             </div>
-            <div class="container">
-              <h4><b> <a href="{{ album.slug }}.html">{{album.title}}</a></b></h4>
+            <div class="card-container">
+              <h4><b><a href="{{ album.slug }}.html">{{album.title}}</a></b></h4>
               <p>Released: {{ album.year }}</p>
             </div>
           </div>
@@ -24,7 +24,7 @@
     </div>
     <div class="col-sm-8">
       {% block slug %}
-        <h1>{{ album.title }}</h1>
+        <h2>{{ album.title }}</h2>
         <p>{{ album.description }}</p>
       {% endblock %}
     </div>
