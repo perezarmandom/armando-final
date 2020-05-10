@@ -1,7 +1,15 @@
-<div class="card">
-  <img src="discs/{{ album.image }}" alt="{{album.title}}" class="responsive col-sm-6 col-lg-12">
-  <div class="container">
-    <h4><b> <a href="{{ album.slug }}.html">{{album.title}}</a></b></h4>
-    <p>Released: {{ album.year }}</p>
+<div class="row">
+{% for album in data.discography %}
+  <div class="col-sm-6 col-lg-3">
+    <div class="album-card">
+      <div class="card img">
+        <img src="{{ album.image }}" alt="{{ album.title }}" class="responsive">
+      </div>
+      <div class="container">
+        <h4><b> <a href="{{ album.slug }}.html">{{album.title}}</a></b></h4>
+        <p>Released: {{ album.year }}</p>
+      </div>
+    </div>
   </div>
+{% endfor %}
 </div>

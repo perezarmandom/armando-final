@@ -1,9 +1,9 @@
 <div class="row">
 {% for member in data.members%}
   <div class="col-sm-6 col-lg-3">
-    <div class="card">
+    <div class="member-card">
       <div class="card img">
-        <img src={{ member.image }} alt="Avatar" class="responsive">
+        <img src="{{ member.image }}" alt="{{ member.name }}" class="responsive">
       </div>
       <div class="container">
         <h4><b> <a href="{{ member.slug }}.html">{{member.name}}</a></b></h4>
@@ -11,8 +11,6 @@
           <ul>
             <li>Instruments: {{ member.instruments }}</li>
             <li>Tenure: {{ member.tenure }}</li>
-            <li>Birthplace: {{ member.birthplace }}</li>
-            <li>Birthdate: {{ member.birthdate }}</li>
           </ul></p>
       </div>
     </div>

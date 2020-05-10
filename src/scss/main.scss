@@ -18,12 +18,13 @@
 // @import "../../node_modules/bootstrap/scss/variables";
 // @import "../../node_modules/bootstrap/scss/mixins";
 
-p, h2, h3, h4, h5 {
+p, h2, h3, h4, h5, li {
   font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
 }
 
 body{
-  background-color: dimgray;
+  background-color: black;
 }
 
 // Import partials
