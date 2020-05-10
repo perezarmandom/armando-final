@@ -25,11 +25,11 @@
         </div>
       </div>
     {% endblock %}
-    <div class="col-sm-8">
-      {% block slug %}
-        <p>{{ member.text }}</p>
-      {% endblock %}
-    </div>
+    {% block slug %}
+      <div class="col-sm-8">
+        {{ member.text|safe }}
+      </div>
+    {% endblock %}
   </div>
 </article>
 {% endblock %}
