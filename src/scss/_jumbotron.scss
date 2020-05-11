@@ -1,11 +1,13 @@
 .jumbotron{
   background: url('../img/queen-band-wallpaper-thin.jpg') no-repeat center center;
   background-size: auto;
+  height: 500px;
   vertical-align: text-top;
   font-family: 'Cinzel', serif;
-  h1, p{
+  h1 {
     color: whitesmoke;
     text-shadow: 2px 2px dimgray;
-    vertical-align: bottom;
+    text-align: center;
+    margin-top: 100px;
   }
 }
